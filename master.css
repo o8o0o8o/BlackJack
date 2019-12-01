@@ -1,6 +1,13 @@
-.card {
-    margin-right: auto;
+#dealerhand {
     margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#playerhand {
+    display: flex;
+    flex-direction: row;
 }
 
 .heart1 {
@@ -202,7 +209,6 @@
     transform: rotate(180deg);
 }
 
-
 .klubrang2 {
     position: relative;
     top: -4.1em;
@@ -212,12 +218,12 @@
     transform: rotate(0deg);
 }
 
-.square {    
+.base {    
     height: 15.0em;
     width: 10.0em;
     border: 0.2em solid black;
     border-radius: 15%;
-    background:floralwhite;
+    background:floralwhite; 
 }
 
 .rang2 {
@@ -232,3 +238,16 @@
 body {
     background: greenyellow;
 }
+
+.base {    
+    animation: go-left-right 3s;  
+}
+
+@keyframes go-left-right {        
+    from { width: 0em;
+           height: 0em; }             
+    to {   height: 15.0em;
+           width: 10.0em; } 
+  }
+
+ 
