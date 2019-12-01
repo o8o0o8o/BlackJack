@@ -163,28 +163,28 @@ function makeHeart(card, stack) {
    let base = document.createElement("DIV");
    base.className = "base";
    document.getElementById(`${stack}`).appendChild(base);
-   base.innerHTML = `<div class="heart1"><div class="heart2"><div class="heart3"><div class="heartrang1">${card}</div><div class="heartrang2">${card}</div></div></div></div>`;
+   base.innerHTML = `<div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front"><div id="base1"><div id="base2"><div id="gradient"></div></div></div></div><div class="flip-card-back"><div class="base"><div class="heart1"><div class="heart2"><div class="heart3"><div class="heart4"><div class="heart5"><div class="heartrang1">${card}</div><div class="heartrang2">${card}</div></div></div></div></div></div></div></div></div></div></div>`;
 }
 
 function makeDiamond(card, stack) {
    let base = document.createElement("DIV");
    base.className = "base";
    document.getElementById(`${stack}`).appendChild(base);
-   base.innerHTML = `<div class="diamond1"><div class="diamond2"><div class="diamondrang1">${card}</div><div class="diamondrang2">${card}</div></div></div>`;
+   base.innerHTML = `<div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front"><div id="base1"><div id="base2"><div id="gradient"></div></div></div></div><div class="flip-card-back"><div class="base"><div class="diamond1"><div class="diamond2"><div class="diamondrang1">${card}</div><div class="diamondrang2">${card}</div></div></div></div></div></div></div>`;
 }
 
 function makeSpade(card, stack) {
    let base = document.createElement("DIV");
    base.className = "base";
    document.getElementById(`${stack}`).appendChild(base);
-   base.innerHTML = `<div class="spade1"><div class="spade2"><div class="spade3"><div class="spade4"><div class="spaderang1">${card}</div><div class="spaderang2">${card}</div></div></div></div></div>`;
+   base.innerHTML = `<div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front"><div id="base1"><div id="base2"><div id="gradient"></div></div></div></div><div class="flip-card-back"><div class="base"><div class="spade1"><div class="spade2"><div class="spade3"><div class="spade4"><div class="spade5"><div class="spade6"><div class="spaderang1">${card}</div><div class="spaderang2">${card}</div></div></div></div></div></div></div></div></div></div></div>`;
 }
 
 function makeKlub(card, stack) {
    let base = document.createElement("DIV");
    base.className = "base";
    document.getElementById(`${stack}`).appendChild(base);
-   base.innerHTML = `<div class="klub1"><div class="klub2"><div class="klub3"><div class="klub4"><div class="klubrang1">${card}</div><div class="klubrang2">${card}</div></div></div></div></div>`;
+   base.innerHTML = `<div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front"><div id="base1"><div id="base2"><div id="gradient"></div></div></div></div><div class="flip-card-back"><div class="base"><div class="klub1"><div class="klub2"><div class="klub3"><div class="klub4"><div class="klub5"><div class="klub6"><div class="klubrang1">${card}</div><div class="klubrang2">${card}</div></div></div></div></div></div></div></div></div></div></div>`;
 }
 
 function start() {
