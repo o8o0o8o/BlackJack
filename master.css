@@ -15,8 +15,16 @@
     width: 10.0em;
     border: 0.2em solid black;
     border-radius: 15%;
-    background:floralwhite;      
+    background:floralwhite;
+    animation: growing 3s;        
 }
+
+@keyframes growing {        
+    from { width: 0em;
+           height: 0em; }             
+    to {   height: 15.0em;
+           width: 10.0em; } 
+  }
 
 .heart1 {
     position: relative;
@@ -225,14 +233,6 @@
     font-style: oblique;
     transform: rotate(0deg);
 }
-.rang2 {
-    position: relative;
-    top: 9.8em;
-    left: -1.4em; 
-    font-size: x-large;
-    font-style: oblique;  
-    transform: rotate(180deg);
-   }
    
 body {
     background: greenyellow;
