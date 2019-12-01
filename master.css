@@ -223,8 +223,7 @@
     width: 10.0em;
     border: 0.2em solid black;
     border-radius: 15%;
-    background:floralwhite; 
-    animation: growing 3s; 
+    background:floralwhite;      
 }
 
 .rang2 {
@@ -238,13 +237,4 @@
    
 body {
     background: greenyellow;
-}
-
-@keyframes growing {        
-    from { width: 0em;
-           height: 0em; }             
-    to {   height: 15.0em;
-           width: 10.0em; } 
-  }
-
- 
+} 
