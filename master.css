@@ -10,6 +10,14 @@
     flex-direction: row;
 }
 
+.base {    
+    height: 15.0em;
+    width: 10.0em;
+    border: 0.2em solid black;
+    border-radius: 15%;
+    background:floralwhite;      
+}
+
 .heart1 {
     position: relative;
     top: 4.5em;
@@ -217,15 +225,6 @@
     font-style: oblique;
     transform: rotate(0deg);
 }
-
-.base {    
-    height: 15.0em;
-    width: 10.0em;
-    border: 0.2em solid black;
-    border-radius: 15%;
-    background:floralwhite;      
-}
-
 .rang2 {
     position: relative;
     top: 9.8em;
