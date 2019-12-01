@@ -224,6 +224,7 @@
     border: 0.2em solid black;
     border-radius: 15%;
     background:floralwhite; 
+    animation: growing 3s; 
 }
 
 .rang2 {
@@ -239,11 +240,7 @@ body {
     background: greenyellow;
 }
 
-.base {    
-    animation: go-left-right 3s;  
-}
-
-@keyframes go-left-right {        
+@keyframes growing {        
     from { width: 0em;
            height: 0em; }             
     to {   height: 15.0em;
