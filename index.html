@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
-    <head>        
+    <head>
+        <link href="master.css" rel="stylesheet">
         <title>Showcase</title>
     </head>
-    <body>         
-        <input type="button" class="start" value="Start" onclick="start()">
-        <input type="button" class="Hit!" value="" onclick="hit()">
-        <input type="button" class="stand" value="" onclick="stand()">
-        <input type="button" class="double" value="" onclick="double()">
-        <input type="button" class="split" value="" onclick="split()">        
-        <input type="button" class="surrender" value="" onclick="surrender()">
-        <span class="score">Score</span><br>
-        <input type="text" class="bet" value="1" size="1">        
-        <span class="statistics">Statistics</span><br>
-        <span class="money"></span>        
+    <body>        
+        <input type="button" id="start" value="Start" onclick="start()">
+        <input type="button" id="Hit!" value="" onclick="hit()">
+        <input type="button" id="stand" value="" onclick="stand()">
+        <input type="button" id="double" value="" onclick="double()">
+        <input type="button" id="split" value="" onclick="split()">        
+        <input type="button" id="surrender" value="" onclick="surrender()">
+        <span id="score">Score</span><br>
+        <input type="text" id="bet" value="1" size="1">        
+        <span id="statistics">Statistics</span><br>
+        <span id="money"></span>            
         <script src="game.js"></script>
     </body>
 </html>
