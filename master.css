@@ -1,0 +1,234 @@
+.card {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heart1 {
+    position: relative;
+    top: 4.5em;
+    left: 0.8em;
+    width: 4.0em;
+    height: 2.0em;
+    background: crimson;
+    border-radius: 10.0em 10.0em 0 0; 
+    transform: rotate(-45deg);     
+    }    
+
+ .heart2  { 
+    position: relative;  
+    top: 3.0em;     
+    left: 3.0em;
+    width: 4.0em;
+    height: 2.0em;
+    background: crimson;
+    border-radius: 10.0em 10.0em 0 0;
+    transform: rotate(90deg);
+ }
+
+ .heart3 {   
+    position: relative;  
+    top: 1.9em;
+    left: -0.1em;
+    width: 4.1em; 
+    height: 4.1em; 
+    background:crimson;
+    transform: rotate(90deg);      
+ }
+ 
+.heartrang1 {
+    position: relative;
+    top: -2.8em;
+    left: 1.5em; 
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(45deg);
+   }
+
+.heartrang2 {
+    position: relative;
+    top: 3.4em;
+    left: -1.6em; 
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(-135deg);
+   }
+
+.diamond1 {
+    position: relative;
+    top: 3em;
+    left: 1.4em;
+    height: 0;
+    width: 0;
+    border-left: 3.5em solid transparent;
+    border-right: 3.5em solid transparent;
+    border-bottom: 4.5em solid blue;
+}
+
+.diamond2 {
+    position: relative;
+    top: 4.5em;
+    left: -3.5em;
+    height: 0;
+    width: 0;
+    border-left: 3.5em solid transparent;
+    border-right: 3.5em solid transparent;
+    border-top: 4.5em solid blue;
+}
+
+.diamondrang1 {
+    position: relative;
+    top: 0.4em;
+    left: 3em;
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(180deg);
+}
+
+.diamondrang2 {
+    position: relative;
+    top: -8.5em;
+    left: -3em;
+    font-size: x-large;
+    font-style: oblique;    
+}
+
+.spade1 {
+    position: relative;
+    top: 3em;
+    left: 3em;
+    height: 4.1em;
+    width: 4.1em;
+    background: black;
+    transform: rotate(45deg);
+}
+
+.spade2 {
+    position: relative;
+    top: 1.0em;
+    left: 3.0em;
+    height: 2.0em;
+    width: 4.0em;
+    background: black;
+    border-radius: 10.0em 10.0em 0 0 ;
+    transform: rotate(90deg);
+}
+
+.spade3 {
+    position: relative;
+    top: 3.0em;
+    left: 3.0em;
+    height: 2.0em;
+    width: 4.0em;
+    background: black;
+    border-radius: 10.0em 10.0em 0 0 ;
+    transform: rotate(90deg);
+}
+
+.spade4 {
+    position: relative;
+    top: 0.1em;
+    left: -2.2em;
+    height: 0em;
+    width: 0em;    
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    border-top: 2.5em solid black;
+    transform: rotate(315deg);
+}
+
+.spaderang1 {
+    position: relative;
+    top: -4.7em;
+    left: -2.5em;
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(0deg);
+}
+
+.spaderang2 {
+    position: relative;
+    top: 2em;
+    left: 3em;
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(180deg);
+}
+
+.klub1 {
+    position: relative;
+    top: 4em;
+    left: 3.5em;
+    height: 2.7em;
+    width: 2.7em;
+    background: green;
+    border-radius: 50%;
+}
+
+.klub2 {
+    position: relative;
+    top: 2.1em;
+    left: -1.4em;
+    height: 2.7em;
+    width: 2.7em;
+    background: green;
+    border-radius: 50%;
+}
+
+.klub3 {
+    position: relative;
+    top: 0em;
+    left: 2.7em;
+    height: 2.7em;
+    width: 2.7em;
+    background: green;
+    border-radius: 50%;
+}
+
+.klub4 {
+    position: relative;
+    top: -1.0em;
+    left: -0.5em;
+    height: 5.0em;
+    width: 1.0em;
+    background: green;
+}
+
+.klubrang1 {
+    position: relative;
+    top: 5em;
+    left: 2.6em;
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(180deg);
+}
+
+
+.klubrang2 {
+    position: relative;
+    top: -4.1em;
+    left: -2.4em;
+    font-size: x-large;
+    font-style: oblique;
+    transform: rotate(0deg);
+}
+
+.square {    
+    height: 15.0em;
+    width: 10.0em;
+    border: 0.2em solid black;
+    border-radius: 15%;
+    background:floralwhite;
+}
+
+.rang2 {
+    position: relative;
+    top: 9.8em;
+    left: -1.4em; 
+    font-size: x-large;
+    font-style: oblique;  
+    transform: rotate(180deg);
+   }
+   
+body {
+    background: greenyellow;
+}
