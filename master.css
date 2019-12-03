@@ -1,17 +1,13 @@
-  @media only screen and (min-width: 100px) {
-    #bender {
-      width: 50%;
-      height: auto;           
+  #bender {
+    position: absolute;
+    bottom: 0em; 
+    width: auto;
+    height: auto;
   }
-  }
+ 
       body {
         background: greenyellow;        
-    }
-
-    #bender {
-        position: absolute;
-        bottom: 0em;             
-    }
+    }  
     
     #base1 {    
         height: 9em;
