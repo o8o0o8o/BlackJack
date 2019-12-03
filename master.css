@@ -1,5 +1,10 @@
     body {
-        background: greenyellow;
+        background: greenyellow;        
+    }
+
+    #bender {
+        position: absolute;
+        bottom: 0em;
     }
     
     #base1 {    
@@ -325,11 +330,7 @@
         font-size: x-large;
         font-style: oblique;  
         transform: rotate(180deg);
-       }
-       
-    body {
-        background: greenyellow;
-    }
+       }  
     
     .flip-card {
         background-color: transparent;
