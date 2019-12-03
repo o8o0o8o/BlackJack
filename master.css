@@ -1,3 +1,22 @@
+@media only screen and (min-width: 300px) {
+    body {
+      background: red;
+    }
+  }
+
+  @media only screen and (min-width: 200px) {
+    body {
+      background: purple;
+    }
+  }
+
+  @media only screen and (min-width: 100px) {
+    body {
+      background: darkblue;
+    }
+  }
+  
+
   @media only screen and (min-width: 500px) {
     body {
       background: yellow;
