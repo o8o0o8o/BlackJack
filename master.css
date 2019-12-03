@@ -1,35 +1,9 @@
-@media only screen and (min-width: 300px) {
-    body {
-      background: red;
-    }
-  }
-
-  @media only screen and (min-width: 200px) {
-    body {
-      background: purple;
-    }
-  }
-
   @media only screen and (min-width: 100px) {
-    body {
-      background: darkblue;
-    }
+    #bender {
+      width: 50%;
+      height: auto;           
   }
-  
-
-  @media only screen and (min-width: 500px) {
-    body {
-      background: yellow;
-    }
   }
-
-  @media only screen and (min-width: 400px) {
-    body {
-      background: black;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
       body {
         background: greenyellow;        
     }
@@ -399,5 +373,4 @@
       
       .flip-card-back {     
         transform: rotateY(180deg);
-      }
-    }
+      }    
