@@ -1,28 +1,29 @@
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+      background: lightblue;
     }
   }
 
   @media only screen and (min-width: 600px) {
     body {
-      background-color: yellow;
+      background: yellow;
     }
   }
 
   @media only screen and (max-width: 768px) {
     body {
-      background-color: black;
+      background: black;
     }
   }
 
   @media only screen and (max-width: 1080px) {
     body {
-      background-color:red;
+      background:red;
     }
   }
 
-    body {
+  @media only screen and (max-width: 1200px) {
+      body {
         background: greenyellow;        
     }
 
@@ -392,3 +393,4 @@
       .flip-card-back {     
         transform: rotateY(180deg);
       }
+    }
