@@ -33,7 +33,7 @@ function deckInit() {
       deck.push(`heart_${arr[i]}`);
       deck.push(`klub_${arr[i]}`);
    }
-   document.getElementById("score").innerHTML = "score";
+   document.getElementById("score").innerHTML = "Score";
    document.getElementById("statistics").innerHTML = "Statistics";
    remains = deck.length
 }
@@ -90,17 +90,17 @@ function changeState() {
       document.querySelector("#start").value = "Playing";
       document.getElementById("Hit!").value = "Hit!";
       document.getElementById("stand").value = "stand";
-      document.getElementById("double").value = "double";
-      document.getElementById("split").value = "split";
+      //document.getElementById("double").value = "double";
+      //document.getElementById("split").value = "split";
       document.getElementById("surrender").value = "surrender";
    } else {
       state = "end";
       document.querySelector("#start").value = "Start";
-      document.getElementById("Hit!").value = "";
-      document.getElementById("stand").value = "";
-      document.getElementById("double").value = "";
-      document.getElementById("split").value = "";
-      document.getElementById("surrender").value = "";
+      //document.getElementById("Hit!").value = "";
+      //document.getElementById("stand").value = "";
+      //document.getElementById("double").value = "";
+      //document.getElementById("split").value = "";
+      //document.getElementById("surrender").value = "";
       document.getElementById("dealerhand").parentNode.removeChild(document.getElementById("dealerhand"));
       document.getElementById("playerhand").parentNode.removeChild(document.getElementById("playerhand"));
    }
@@ -201,7 +201,7 @@ function start() {
       deal("p");
       deal("d");
       deal("d");
-   }
+   }  
 }
 
 function hit() {
@@ -210,8 +210,9 @@ function hit() {
 }
 
 function stand() {
-   firstMove = true;
+   if (state === "Playing") {
    showOff();
+   }
 }
 
 function double() {
@@ -228,4 +229,111 @@ function surrender() {
    if (!firstMove) {
       showOff();
    }
+}
+
+function createPopup(){   
+   let popup =  document.createElement("span");
+   popup.className = "popup";
+   document.body.appendChild(popup);
+   popup.innerHTML = `<input type="button" id="start" value="Start" onclick="start()" >
+   <label for="start" class="popup-content" id="popup-content">Press Start to begin</label>`; 
+   
+}
+
+function tutorialHit(){
+   delById("popup-content");
+   let popup =  document.createElement("span");
+   popup.className = "popup";
+   document.body.appendChild(popup);
+   popup.innerHTML = `<input type="button" id="Hit!" value="Hit!" onclick="hit()" >
+   <label for="Hit!" class="popup-content" id="popup-content">Press Hit! to get one more card</label>`;
+   delClick(tutorialHit);
+   addClick(tutorialsurrender);  
+}
+
+function tutorialsurrender(){
+   delById("popup-content");
+   let popup =  document.createElement("span");
+   popup.className = "popup";
+   document.body.appendChild(popup);
+   popup.innerHTML = `<input type="button" id="surrender" value="Surrender" onclick="surrender()">
+   <label for="surrender" class="popup-content" id="popup-content">Press Surrender to finish the game. You can only use this possibility as the first move just after the start</label>`;
+   delClick(tutorialsurrender);
+   addClick(tutorialstand);  
+}
+
+function tutorialstand(){
+   delById("popup-content");
+   let popup =  document.createElement("span");
+   popup.className = "popup";
+   document.body.appendChild(popup);
+   popup.innerHTML = `<input type="button" id="stand" value="Stand" onclick="stand()"></input>
+   <label for="stand" class="popup-content" id="popup-content">Press Stand to immediately finish the game</label>`;
+   delClick(tutorialstand); 
+   addClick(normalMode);    
+}
+
+function normalMode() {
+   delClick(normalMode);
+   delById("popup-content");
+   //delClassName("popup");
+   //delClassName("container");
+   labels();
+   var style = document.createElement('style');
+  style.innerHTML = `
+  body > *:not(.popup) {        
+   filter: blur(0em);       
+ }; 
+  `;
+  document.head.appendChild(style);
+}
+
+function delClassName(classname) {
+   let arr = document.getElementsByClassName(classname);
+   arr.forEach(element => {
+      element.classlist.remove(classname);
+   });
+}
+
+function labels() {
+   let br = document.createElement("br");
+   document.body.appendChild(br);
+   document.body.appendChild(br);
+   let div = document.createElement("div");
+   document.body.appendChild(div);
+   div.id = "score";
+   div.className = "stat";
+   div.innerHTML = "Score";
+   let div2 = document.createElement("div2");
+   document.body.appendChild(div2);
+   div2.id = "statistics";
+   div2.className = "stat";
+   div2.innerHTML = "Statistics";      
+}
+
+function delClick(func) {
+   document.removeEventListener('click', func, false);;
+}
+
+function addClick(func){
+   document.addEventListener('click', func, false);
+   clearPopup();
+}
+
+
+function delById(id) {   
+   let del = document.getElementById(id);
+   del.parentNode.removeChild(del);
+}
+
+function tutorial() {
+   createPopup()
+   addClick(tutorialHit);
+   
+}
+
+function wrapAndLabel(element, wrapper, label){
+   element.parentNode.insertBefore(wrapper, element);
+   wrapper.appendChild(element);
+   element.innerHTML = `<label class="popup-content">${label}</label>`;
 }

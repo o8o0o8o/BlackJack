@@ -1,25 +1,14 @@
-  @media (min-width: 1025px) {
-  
+@media only screen and (max-width: 768px) {
     #bender {
-        position: absolute;
-        bottom: 0em; 
-        width: auto;
-        height: auto;
-      }    
+      width: auto;
+      height: auto;
+    }
   }
 
-  @media (min-width: 320px) and (max-width: 480px) {  
     #bender {
         position: absolute;
-        bottom: 0em; 
-        width: 70%;
-        height: auto;
-      }    
-  }
- 
-      body {
-        background: greenyellow;        
-    }  
+        bottom: 0em;        
+    }
     
     #base1 {    
         height: 9em;
@@ -381,4 +370,27 @@
       
       .flip-card-back {     
         transform: rotateY(180deg);
-      }    
+      }
+
+      body > *:not(.popup) {        
+        filter: blur(2em);       
+      }
+      
+      .container{        
+        background-color: rgb(58, 53, 53);       
+        color: rgb(10, 10, 10);
+    }
+
+    .popup .popup-content
+        {font-size: 2em;        
+        background-color: red;
+        overflow:hidden;
+        position: fixed;
+        top:0em;               
+        box-shadow: 0px 0px 1em #000;        
+    }
+   
+    .stat {
+        font-size: 2em;
+        color: coral;
+    }
